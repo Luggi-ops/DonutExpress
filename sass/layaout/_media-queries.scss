@@ -8,7 +8,6 @@
     .top-section{
         .top-section__img{
             img{
-                bottom: 5rem;
                 left: 3%;
                 width: 60rem;
             }
@@ -255,8 +254,7 @@
         .top-section__img{
             img{
                 width: 33rem;
-                bottom: -21rem;
-                left: 8%;
+                left: 0;
             }
         }
     }
@@ -284,5 +282,21 @@
             }
         }
     }
+
+    .entrega{
+        .carousel{
+            .carousel-inner{
+                .carousel-item{
+                    .entrega__item{
+                        form{
+                            .entrega__content-img-mobile-1{
+                                left: 7.7rem!important;
+                            } 
+                        }  
+                    } 
+                } 
+            } 
+        } 
+    } 
 
 }

@@ -18,6 +18,8 @@
         margin-bottom: 5rem;
         height: 100vh;
         min-height: 80rem;
+
+        
     }
 
     .slider-heading{
@@ -195,8 +197,9 @@
 
         }
     }
-
-    .button-ligth{
-        left: 0;
+    .button-light{
+        left: 0!important;
     }
+
+    
 }
