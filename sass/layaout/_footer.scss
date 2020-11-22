@@ -1,0 +1,63 @@
+//Footer
+
+
+.footer {
+    height: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $branding-color;
+    padding: 10rem 0 0 0;
+    color: $white;
+    // clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
+
+    .footer__seguinos{
+        color: $white;
+        font-weight: 400;
+        font-size: 1.8rem;
+    }
+
+    .contenedor{
+        a{
+            .facebook,
+            .twitter,
+            .instagram{
+                width: 4rem;
+                position: relative;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+            &:hover{
+                @include animation-footer-rrss()
+            };
+        }
+
+        
+    }
+
+    .footer__contacto{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .footer__desarrollador{
+        font-size: 1.3rem;
+
+        ul{
+
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+            img{
+                width: 40%;
+            }
+        }
+    }
+
+    @include animation-footer-desarrollador();
+    
+}

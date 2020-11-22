@@ -1,0 +1,86 @@
+//Nuestra carta
+
+.carta{
+    background-color: $white;
+    padding: 20rem 0 15rem 0;
+    width: 90%;
+    margin: 0 auto;
+    height: 90rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 100;
+
+    .carta__header{
+        text-align: center;
+        margin-bottom: 5rem;
+
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .carta__content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+
+        .carta__table-container{
+            margin-top: rem;
+            .carousel{
+                width: 30rem;
+                position: relative;
+                margin-top: 4rem;
+
+                .carousel-indicators{
+                    position: absolute;
+                    top: -8rem;
+                    height: max-content;
+                    
+                    a{
+                        cursor: pointer;
+                        opacity: .5;
+                        
+                    }
+
+                    @include animation-nuestra-carta();
+
+                    .active{
+                        opacity: 1;
+                    }
+                }
+                .carousel-inner{
+                    .carousel-item{
+                        
+                        .carta__table{
+                            background-color: $branding-color;
+                            color: $white;
+                            padding: 1rem;
+                            border-radius: 1rem;
+                            border-collapse: collapse;
+                            text-align: center;
+                            width: 30rem;
+            
+                            display: flex;
+                            justify-content: center;
+                            
+                    
+                            tr{
+                                display: block;
+                                margin: 1.5rem;
+                    
+                                td,th{
+                                    overflow-wrap: break-word;
+                                    width: 10rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}

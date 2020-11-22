@@ -1,0 +1,121 @@
+
+.forma-pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    color: $white;
+    padding: 10rem 0;
+
+    .forma-pago__header{
+        margin-top: 3rem;
+    }
+    .forma-pago__content{
+        width: 100%;
+        .carousel{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .carousel-indicators{
+                position: static;
+                order: 2;
+
+                p{
+                    margin-right: 2rem;
+                    font-weight: 700;
+                    
+                    cursor: pointer;
+
+                    &:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+
+                .active{
+                    border-bottom: 2px solid $white;
+                }
+            }
+
+            .carousel-inner{
+                padding: 2rem;
+                height: 55rem;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                .carousel-item{
+                    width: 100%;
+                    .forma-pago__item{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        width: 100%;
+
+
+                        .forma-pago__order{
+                            margin-top: 1rem;
+                            font-size: 3rem;
+                            text-align: center;
+                            h4{
+                                color: $white;
+                            }
+                        }
+                        
+
+                        .forma-pago__img{
+                            img{
+                                width: 40rem;
+                            }
+                        }
+
+                        form{
+                            color: $black;
+                            background-color: $white;
+                            padding: 3rem;
+                            border: 1px solid $pink;
+                            border-radius: 2rem;
+                            -webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                            -moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                            box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                            input, select{
+                                display: block;
+                                margin-bottom: 1rem;
+
+                                &:last-of-type{
+                                    margin-bottom: 0;
+                                }
+
+                            }
+
+                            input{
+                                padding: 1rem;
+                                border: 1px solid $pink;
+                                border-radius: 5rem;
+                                outline: none;
+
+                            }
+
+                            .forma-pago__expiracion, .forma-pago__cvc{
+                                input{
+                                    display: inline-block;
+                                    width: 7rem;
+                                }
+
+                                p{
+                                    display: inline-block;
+                                    font-size: 2rem;
+                                }
+                            }
+
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

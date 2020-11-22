@@ -1,0 +1,62 @@
+
+//Barra superior de navegación
+
+.navbar{
+    .navbar-collapse{
+        .navbar-nav{
+            li{
+                a{
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: $black;
+                    font-family: $font-heading;
+                    font-size: $font-size-normal;
+                    transition: all .5s;
+        
+                    &:hover{
+                        background-color: $branding-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-logo{
+        img {
+            width: 12rem;
+        }
+        line-height: $line-height-special;
+        padding: .5rem 
+        
+    }
+
+    .navbar-carrito{
+        position: absolute;
+        right: 2rem;
+        top: 1rem;
+        .carrito-items-group{
+            position: absolute;
+            right: 0;
+            border: none;
+            
+            ul{
+                list-style: none;
+                width: 25rem;
+                background-color: $white;
+            
+
+                li{
+                    margin: .5rem;
+                    color: $black;
+
+                    &:last-child{
+                        border-top: 1px solid $black;
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

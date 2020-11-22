@@ -1,0 +1,61 @@
+
+//Nosotros
+
+#nosotros{
+    height: 100vh;
+    min-height: 110rem;
+    padding: 60rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .nosotros__header{
+        margin-top: 5rem;
+    }
+
+    .nosotros__content{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .nosotros__item-content{
+            font-size: 1.8rem;
+            .nosotros__item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 2rem;
+                i{
+                    font-size: 5rem;
+                    margin-right: 2rem;
+                    background-color: $branding-color;
+                    color: $white;
+                    padding: 2rem;
+                    border-radius: 50%;
+                    position: relative;
+                    top: 0;
+                    transition: .5s;
+                    
+
+                    &:hover{
+                        background-color: $white;
+                        color: $branding-color;
+                        top: -1rem;
+                    }
+                }
+            }
+        }
+
+        .nosotros__text{
+            width: 65rem;
+            color: $white;
+            background-color: $branding-color;
+            padding: 2rem;
+            border-radius: 2rem;
+            font-size: 1.8rem;
+        }
+    }
+}

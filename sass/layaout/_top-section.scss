@@ -1,0 +1,49 @@
+//Seccion superior
+
+.top-section{
+    height: 80rem;
+    display: flex;
+    overflow-x: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+    background-color: $branding-color;
+
+    .top-section__img{
+        flex: 0 0 50%;
+        transition: all 1s;
+        position: relative;
+
+        &:hover{
+            flex: 0 0 60%;
+        }
+
+        img{
+            position: absolute;
+            bottom: 1rem;
+            left: 15%;
+            z-index: 50;
+            width: 70rem;
+            height: auto;
+        }
+    }
+
+    .top-section__text-container{
+        flex: 0 0 50%;
+        transition: all 1s;
+        position: relative;
+        z-index: 100;
+
+        @include df-column-center();
+
+        .top-section__text{
+            color: $white;
+            width: 80%;
+            margin: 3rem 0 0 2rem;
+
+            p{
+                font-family: $font-heading;
+                font-size: $font-size-large;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

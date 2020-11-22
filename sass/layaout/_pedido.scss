@@ -1,0 +1,202 @@
+
+//Hacer el pedido
+
+#pedido{
+    background-color: $branding-color;
+    padding-top: 8rem;
+    @include df-column();
+    clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    h2{
+        color: $white;
+    }
+
+    .pedido-container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 5rem;
+        height: 100vh;
+        min-height: 80rem;
+    }
+
+    .slider-heading{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 1rem;
+        position: relative;
+        z-index: 50;
+    }
+
+    .row{
+        .carousel{
+            width: 95%;
+            margin: 0 auto;
+            .carousel-control-next,
+            .carousel-control-prev{
+                height: 5rem;
+                position: absolute;
+                top: 20%;
+            }
+            .carousel-inner{
+                border-radius: 3rem;
+                -webkit-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.75);
+                
+                .carousel-item{
+                    .slider-card{
+                        padding: 1rem;
+                        border: .1rem solid #FBF4F4;
+                        background-color: #fff;
+                        flex: 0 0 100%;
+                        height: 54rem;
+
+                        /**flexbox para el contenido dentro de la card**/
+                        display: flex;
+                        flex-direction: column;
+
+                        .slider-card__img-container{
+                            width: 100%;
+                            height: 30rem;
+                            
+
+                            .slider-card__img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 3rem;
+                            }
+                        }
+
+                        .slider-card__content{
+                            margin-top: 2rem;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            height: 30rem;
+
+                            .puntaje{
+                                .fa-star{
+                                    color: $yellow;
+                                }
+                            }
+
+                            .agregar-pedido-dona{
+                                margin: 1rem 0;
+                            }
+
+                            .agregar-pedido{
+                                display: flex;
+                                justify-content: space-between;
+
+                                .agregar-quitar{
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 2rem;
+
+                                    .fa-plus-circle, .fa-minus-circle{
+                                        color: $branding-color;
+                                        &:hover{
+                                            cursor: pointer;
+                                        }
+                                    }
+
+                                }
+                                i,p{
+                                    margin-right: 1rem;
+                                }
+                            }
+
+                        }
+
+                        .slider-card__form{
+                            .slider-card__form--item{
+                                margin: 1rem 0;
+
+                                select{
+                                    background-color: transparent;
+                                    border: .1rem solid $branding-color;
+                                    color: $branding-color;
+                                    height: 3rem;
+                                    width: 12rem;
+                                    padding: .5rem;
+                                    font-weight: bold;
+                                    text-align: center;
+                                    outline: none;
+                                    border-radius: 1rem;
+                                }
+
+                                input[type="radio"]{
+                                    display: none;
+
+                                    &:checked + label{
+                                        padding: .5rem 1.5rem;
+                                        background-color: $branding-color;
+                                        color: $white;
+                                    }
+
+                                    &:checked + label::before{
+                                        display: none;
+                                    }
+                                }
+
+                                label{
+                                    color: $branding-color;
+                                    padding: .5rem 0rem .5rem 3.8rem;
+                                    display: inline-block;
+                                    position: relative;
+                                    border-radius: .8rem;
+                                    cursor: pointer;
+                                    transition: .5s;
+                                    
+
+                                    &::before{
+                                        content: "";
+                                        width: 1.7rem;
+                                        height: 1.7rem;
+                                        display: inline-block;
+                                        background-color: none;
+                                        border: 3px solid $branding-color;
+                                        border-radius: 50%;
+                                        position: absolute;
+                                        left: 1.7rem;
+                                    }
+
+                                    
+                                }
+                            }
+
+                            
+
+                            .tamaño-cafe{
+                                display: flex;
+                                justify-content: space-between;
+                            }
+
+                            .agregar-pedido{
+                                display: flex;
+                                justify-content: space-between;
+
+                                .agregar-quitar{
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 2rem;
+                                }
+                                i,p{
+                                    margin-right: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .button-ligth{
+        left: 0;
+    }
+}

@@ -1,0 +1,67 @@
+//Corporativo
+
+.corporativo{
+    margin: 0 auto;
+    padding-bottom: 20rem;
+    .corporativo__top{
+        @include df-column-center();
+        align-items: center;
+        height: 45rem;
+
+        .corporativo__img{
+            @include bg-img(url(../img/corporativos.jpg));
+            width: 100%;
+            height: 50rem;
+        }
+    }
+
+    h2{
+        margin-top: 10rem;
+        text-align: center;
+    }
+
+    .corporativo__text{
+        margin: 5rem 0;
+        @include df-column();
+        align-items: center;
+    }
+
+    .corporativo__form{
+        width: 50%;
+        margin: 0 auto;
+        padding: 3rem 0;
+        padding: 3rem;
+        border: 1px solid $pink;
+        border-radius: 2rem;
+        -webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+
+        input,
+        textarea{
+            display: block;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid $pink;
+            border-radius: 5rem;
+            outline: none;
+            width: 100%;
+        }
+
+        textarea{
+            padding: 1.5rem;
+        }
+
+        label{
+            display: block;
+            margin: .5rem auto;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1.3rem;
+            font-family: inherit;
+            border-radius: .5rem;
+            text-transform: uppercase;
+        }
+    }
+
+}

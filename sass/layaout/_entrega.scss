@@ -1,0 +1,145 @@
+
+
+.entrega{
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 7rem 0;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+
+    // Estas propiedades son por las donas animadas de fondo
+    position: relative;
+    overflow: hidden;
+
+    .entrega__header{
+        margin-top: 3rem;
+    }
+
+    .carousel{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+
+        .carousel-indicators{
+            position: static;
+            order: 2;
+
+            p{
+                margin-right: 2rem;
+                font-weight: 700;
+                border-bottom: 1px solid transparent;
+                cursor: pointer;
+
+                &:last-of-type{
+                    margin-right: 0;
+                }
+            }
+
+            .active{
+                border-bottom: 2px solid $black;
+            }
+        }
+        
+        .carousel-inner{
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            .carousel-item{
+                .entrega__item{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 58rem;
+
+
+                    .entrega__content-img{
+                        width: 45rem;
+                        height: 35rem;
+                        overflow: hidden;
+                        position: relative;
+                        border-radius: 2rem;
+                        margin: 0 2rem 2rem 0;
+
+                        img{
+                            position: absolute;
+                            left: -17rem;
+                        }
+                    }
+
+                    form{
+                        padding: 4rem 2rem;
+                        border: 1px solid $pink;
+                        border-radius: 2rem;
+                        -webkit-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                        -moz-box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                        box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+                        position: relative;
+                        width: 30rem;
+
+                        input, label, select{
+                            display: block;
+                            margin-bottom: 1rem;
+                        }
+
+                        input{
+                            &:last-of-type{
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        input, select, option{
+                            padding: 1rem;
+                            border: 1px solid $pink;
+                            border-radius: 5rem;
+                            outline: none;
+
+                            
+                        }
+
+                        .entrega__content-img-mobile-1, .entrega__content-img-mobile-2, .entrega__content-img-mobile-3{
+                            border-radius: 50%;
+                            border: 1px solid $branding-color;
+                            overflow: hidden;
+                            width: 9rem;
+                            height: 9rem;
+                            position: absolute;
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            top: -6rem;
+                            left: 10.7rem;
+                            display: none;
+                            img{
+                                width: 20rem;
+                            }
+                        }
+                        .entrega__content-img-mobile-1{
+                            background-image: url(../img/reservacion.jpg);
+                        }
+                        .entrega__content-img-mobile-2{
+                            background-image: url(../img/delivery.jpg);
+                        }
+                        .entrega__content-img-mobile-3{
+                            background-image: url(../img/retiro-sucursal.jpg);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+    .button{
+        background-color: $branding-color;
+        color: $white;
+        margin-top: 3rem;
+        &:hover{
+            background-color: $white;
+            border: 2px solid $branding-color;
+            color: $branding-color;
+        }
+    }
+}

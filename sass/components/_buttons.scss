@@ -1,0 +1,58 @@
+// COMPONENTS
+
+// buttons
+
+.button{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: all .5s;
+    width: 100%;
+    outline: none;
+    border: 2px solid $branding-color;
+    font-weight: 600;
+}
+
+.button-primary{
+    background-color: $branding-color;
+    color: $white;
+    border-radius: 3rem;
+    width: 21rem;
+
+    &:hover{
+        background-color: transparent;
+        color: $branding-color;
+
+    }
+}
+
+.button-light{
+    color: $branding-color;
+    background-color: $white;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: .2rem solid white;
+    width: 15rem;
+    text-decoration: none;
+    transition: background-color 1s;
+    position: relative;
+    left: 2rem;
+
+    &:hover{
+        background-color: #f2f2f255;
+        cursor: pointer;
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.button-generic {
+    width: 20rem;
+    margin: .5rem auto 0 auto;
+}

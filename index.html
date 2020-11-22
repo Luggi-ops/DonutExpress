@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Express</title>
+    <meta name="description"
+        content="Ordená tu desayuno o merienda sin moverte de tu lugar, probá las deliciosas donas de Donut Express y acompañalo con lo que desees">
+    <meta name="keywords"
+        content="donas de chocolate, donas glaceadas, donas light, donas con confites, café expresso, café con leche, capuchino, licuados, submarino de chocolate.">
+    <meta name="author" content="Luis Gudiño Dufour">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Mis Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Red+Hat+Display:wght@400;500&display=swap&family=Great+Vibes&display=swap"" rel="
+        stylesheet">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+            <div class="navbar-logo mr-5">
+                <a href="index.html">
+                    <img src="img/logo-donut-express.png" alt="donut express logo">
+                </a>
+                
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#carta" class="nav-link">Nuestra carta</a></li>
+                    <li class="nav-item"><a href="#pedido" class="nav-link">Hacé tu pedido</a></li>
+                    <li class="nav-item"><a href="corporativos.html" class="nav-link">Servicios Corporativos</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#newsletter" class="nav-link">Newsletter</a></li>
+                </ul>
+                <div class="navbar-carrito">
+                    <div>
+                        <a class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                            aria-controls="collapseExample">
+                            <img src="img/carrito.png" alt="compra-dona" loading="lazy"><img src="img/carrito-2.png"
+                                alt="compra-cafe" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="collapse carrito-items-group" id="collapseExample">
+                        <ul class="card card-body">
+                            <li>1 Donut Homer $110</li>
+                            <li>1 L Expresso $70</li>
+                            <li>Beneficio orden online 20%</li>
+                            <li> </li>
+                            <li>Total: $144</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Bot -->
+
+    <div class="bot">
+        <div class="bot__icon">
+            <a class="collapsed" data-toggle="collapse" href="#bot" aria-expanded="false"
+                aria-controls="collapseExample">
+                <img src="img/bot.png" alt="chatbot">
+            </a>
+        </div>
+
+        <div class="collapse carrito-items-group bot__chat-container" id="bot">
+            <div class="bot__chat">
+                <div class="bot__chat-heading" data-toggle="collapse" href="#bot" aria-expanded="false"
+                    aria-controls="collapseExample">
+                    <p>Donut Bot :)</p>
+                </div>
+                <div class="bot__chat-body">
+
+                </div>
+
+                <div class="bot__chat-input">
+                    <input type="textarea" placeholder="Escribe tu mensaje aquí">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido superior -->
+
+    <div class="top-section">
+        <div class="top-section__img">
+            <img src="img/donas-top.png" alt="dona de homero">
+        </div>
+        <div class="top-section__text-container wow animate__animated animate__fadeInRight">
+            <div class="top-section__text">
+                <h1>Bienvenido a Donut Express</h1>
+                <p>Ahora deslizá mientras hacés tu pedido</p>
+            </div>
+
+            <a href="#pedido" class="button button-light">Hacé tu pedido!</a>
+        </div>
+    </div>
+
+    <!-- Sección nuestra carta -->
+
+    <section class="carta" id="carta">
+
+        <div class="carta__header wow animate__animated animate__fadeIn">
+            <h2>Nuestra carta</h2>
+            <p>Existe una amplia gama de preparaciones que pueden ser desde sencillas a elaboradas</p>
+        </div>
+
+        <div class="carta__content wow animate__animated animate__fadeInDown">
+
+            <div class="carta__table-container">
+                <div id="carouselCartaIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-indicators">
+                        <a data-target="#carouselCartaIndicators" data-slide-to="0" class="active"><img
+                                src="img/bebida.png" alt="" class="cafe-animacion"></a>
+                        <a data-target="#carouselCartaIndicators" data-slide-to="1"><img src="img/dona-icon.png"
+                                alt="" class="dona-animacion"></a>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <table class="carta__table">
+                                <tr>
+                                    <th>Bebida</th>
+                                    <th>Chico</th>
+                                    <th>Grande</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Expresso</td>
+                                    <td>$60</td>
+                                    <td>$70</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Licuado</td>
+                                    <td>$80</td>
+                                    <td>$90</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cappuccino</td>
+                                    <td>$70</td>
+                                    <td>$75</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Latte</td>
+                                    <td>$60</td>
+                                    <td>$70</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cortado</td>
+                                    <td>$60</td>
+                                    <td>$70</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Submarino</td>
+                                    <td>$75</td>
+                                    <td>$85</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="carousel-item">
+                            <table class="carta__table">
+
+                                <tr>
+                                    <th>Dona</th>
+                                    <th>Precio</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Donutella</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Homer</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Anti Gluten</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Chocorains</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Dulce de leche</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Light Express</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Cokie Express</td>
+                                    <td>$110</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Donuts m&m</td>
+                                    <td>$110</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fondo-animado-1">
+        </div>
+
+        <div class="fondo-animado-2">
+        </div>
+
+    </section>
+
+    <!-- Sección para hacer el pedido, modo de entrega y pago -->
+    <main id="pedido">
+        <h2 class="slider-heading">Hacé tu pedido</h2>
+
+        <!-- Elegir el pedido -->
+
+        <div class="pedido-container container">
+            <div class="row justify-content-center">
+                <!-- Carousel bebida -->
+                <div id="carouselBebidaIndicators" class="carousel slide col-sm-12 col-md-6 col-lg-5 col-xl-4 mb-5 wow animate__animated animate__fadeIn""
+                    data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Cafe expresso -->
+                        <div class="carousel-item active">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/cafe-espresso.jpg" class="slider-card__img" alt="café expresso"
+                                        loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Café Expresso</h4>
+                                    <p>Preparado con ricos granos de café tostado</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+                                        <div class="tamaño-cafe slider-card__form--item">
+
+                                            <div>
+                                                <input type="radio" id="s-expresso" name="tamaño-expresso" checked>
+                                                <label for="s-expresso">Chico</label>
+
+                                                <input type="radio" id="l-expresso" name="tamaño-expresso">
+                                                <label for="l-expresso" name="tamaño">Grande</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>1</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Capuchino -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/capuchino.jpg" class="slider-card__img" alt="capuchino"
+                                        loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Capuchino</h4>
+                                    <p>Delicioso a la vista y al paladar.</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+                                        <div class="tamaño-cafe slider-card__form--item">
+
+                                            <div>
+                                                <input type="radio" id="s-capuchino" name="tamaño-capuchino" checked>
+                                                <label for="s-capuchino">Chico</label>
+
+                                                <input type="radio" id="l-capuchino" name="tamaño-capuchino">
+                                                <label for="l-capuchino" name="tamaño">Grande</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>0</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Licuados -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/licuados.jpg" class="slider-card__img" alt="Licuados" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Licuados</h4>
+                                    <p>Ricos licuados de para compartir una linda tarde.</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+                                        <div class="slider-card__form--item">
+                                            <div>
+                                                <input type="radio" id="lic-banana" name="fruta-licuado" checked>
+                                                <label for="lic-banana">Banana</label>
+                                                <input type="radio" id="lic-frutilla" name="fruta-licuado">
+                                                <label for="lic-frutilla">Frutilla</label>
+                                                <input type="radio" id="lic-durazno" name="fruta-licuado">
+                                                <label for="lic-durazno">Durazno</label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>0</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Cafe con leche -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/latte-cafe-con-leche.jpg" class="slider-card__img"
+                                        alt="latte café con leche" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Café con leche (Latte)</h4>
+                                    <p>La combinación justa de café y leche</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+
+                                        <div class="tamaño-cafe slider-card__form--item">
+                                            <div>
+                                                <input type="radio" id="s-latte" name="tamaño-latte" checked>
+                                                <label for="s-latte">Chico</label>
+
+                                                <input type="radio" id="l-latte" name="tamaño-latte">
+                                                <label for="l-latte" name="tamaño">Grande</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>0</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Cafe cortado -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/cortado.jpg" class="slider-card__img" alt="cafe cortado"
+                                        loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Café cortado</h4>
+                                    <p>Ideal para despertar tus mañanas</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+
+                                        <div class="tamaño-cafe slider-card__form--item">
+                                            <div>
+                                                <input type="radio" id="s-cortado" name="tamaño-cortado" checked>
+                                                <label for="s-cortado">Chico</label>
+
+                                                <input type="radio" id="l-cortado" name="tamaño-cortado">
+                                                <label for="l-cortado" name="tamaño">Grande</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>0</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Submarino -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/submarino.jpg" class="slider-card__img" alt="submarino de chocolate"
+                                        loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Submarino de chocolate</h4>
+                                    <p>Nada mejor que acompañar chocolate con más chocolate</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <form action="" class="slider-card__form">
+
+                                        <div class="tamaño-cafe slider-card__form--item">
+                                            <div>
+                                                <input type="radio" id="s-submarino" name="tamaño-submarino" checked>
+                                                <label for="s-submarino">Chico</label>
+
+                                                <input type="radio" id="l-submarino" name="tamaño-submarino">
+                                                <label for="l-submarino" name="tamaño">Grande</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="agregar-pedido">
+                                            <div class="agregar-quitar">
+                                                
+                                                
+                                                <i class="fas fa-minus-circle"></i>
+                                                <p>0</p>
+                                                <i class="fas fa-plus-circle"></i>
+                                            </div>
+                                            <button type="submit"
+                                                class="button button-primary slider-card__form--item">Agregar al
+                                                pedido</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBebidaIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBebidaIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+                <!-- Carousel dona -->
+
+                <div id="carouselDonaIndicators" class="carousel slide col-sm-12 col-md-6 col-lg-5 col-xl-4 mb-5 wow animate__animated animate__fadeIn"
+                    data-ride="carousel" data-interval="false">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Homer -->
+                        <div class="carousel-item active">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/homer.jpg" class="slider-card__img" alt="dona Homer" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Homer</h4>
+                                    <p>Para tu mesa llega la tradicional y más rica dona de Springfield.</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>1</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Donutella -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/donutella.jpg" class="slider-card__img"
+                                        alt="donas rellenas de nutella" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Donutella</h4>
+                                    <p>Deliciosas donas rellenas de nutella, ideal para acompañar tu café.</p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Anti Gluten -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/dona-sin-gluten.jpg" class="slider-card__img" alt="dona sin gluten">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Donuts anti gluten</h4>
+                                    <p>Deliciosas donas sin gluten apta para celíacos. </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Lluvia de chocolate -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/lluvia-de-chocolate.jpg" class="slider-card__img"
+                                        alt="dona lluvia de chocolate" loading="lazy">
+                                </div>
+                                <div class="slider-card__content">
+                                    <h4>Lluvia de chocolate</h4>
+                                    <p>Dona glasé de chocolate con choco chispas de chocolate para animar tu día. </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Dulce de leche -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/dulce-de-leche.jpg" class="slider-card__img" alt="dona dulce de leche"
+                                        loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Dulce de leche</h4>
+                                    <p>Dona tradicional de vainilla, riquísima, rellena de dulce de leche. </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Light -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/light.jpg" class="slider-card__img" alt="dona light" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Light Express</h4>
+                                    <p>Dona tradicional hecha al horno, una buena elección para cuidar la figura. </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Oreo -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/oreo.jpg" class="slider-card__img" alt="Dona oreo" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Cokie Express</h4>
+                                    <p>Dona tradicional con abundante lluvia de galletas oreos. </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- m&m -->
+                        <div class="carousel-item">
+                            <div class="slider-card">
+                                <div class="slider-card__img-container">
+                                    <img src="img/dona-mm.png" class="slider-card__img" alt="dona m&m" loading="lazy">
+                                </div>
+
+                                <div class="slider-card__content">
+                                    <h4>Donuts m&m</h4>
+                                    <p>Dona tradicional cubierta de deliciosos confites m&m </p>
+                                    <div class="puntaje">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+
+                                    <div class="agregar-pedido agregar-pedido-dona">
+                                        <div class="agregar-quitar">
+                                            
+                                            
+                                            <i class="fas fa-minus-circle"></i>
+                                            <p>0</p>
+                                            <i class="fas fa-plus-circle"></i>
+                                        </div>
+                                        <button type="submit" class="button button-primary">Agregar al pedido</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselDonaIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselDonaIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <a href="#entrega" class="button button-light">Siguiente!</a>
+        </div>
+
+
+        <!-- Modo de entrega -->
+
+        <section id="entrega" class="entrega">
+            <div class="entrega__header">
+                <h3>Modo de entrega</h3>
+            </div>
+            <div id="carouselEntregaIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-indicators">
+                    <p data-target="#carouselEntregaIndicators" data-slide-to="0" class="active">Reservar</p>
+                    <p data-target="#carouselEntregaIndicators" data-slide-to="1">Delivery</p>
+                    <p data-target="#carouselEntregaIndicators" data-slide-to="2">Retiro en sucursal</p>
+                </div>
+                <div class="carousel-inner wow animate__animated animate__fadeInUp" role="listbox">
+                    <!-- Reservacion -->
+                    <div class="carousel-item active">
+                        <div class="entrega__item">
+                            <div class="entrega__content-img">
+                                <img src="img/reservacion.jpg" alt="">
+                            </div>
+
+                            <form action="">
+                                <div class="entrega__content-img-mobile-1">
+                                </div>
+                                <input type="date" required>
+                                <input type="time" required>
+                                <label for="cantidad">Cantidad de personas</label>
+                                <input type="number" id="cantidad" max="10" min="1" required>
+
+                                <input type="submit" value="Aceptar" class="button button-generic button-primary">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Delivery -->
+                    <div class="carousel-item">
+                        <div class="entrega__item">
+                            <div class="entrega__content-img">
+                                <img src="img/delivery.jpg" alt="">
+                            </div>
+
+                            <form action="">
+                                <div class="entrega__content-img-mobile-2">
+                                </div>
+                                <select name="" id="ciudad" required>
+                                    <option value="" disabled selected>Ciudad</option>
+                                    <option value="cba">
+                                        Córdoba
+                                    </option>
+                                    <option value="vallnde">
+                                        Villa Allende
+                                    </option>
+                                    <option value="vcp">
+                                        Carlos Paz
+                                    </option>
+                                </select>
+
+                                <label for="domicilio">Domicilio de entrega</label>
+                                <input type="text" id="domicilio" placeholder="Av. Siempre Viva, 742" required>
+
+                                <label for="piso">Piso</label>
+                                <input type="number" name="piso" id="piso" required>
+
+                                <label for="depto">Departamento</label>
+                                <input type="text" required>
+
+                                <label for="entre_calles">Entre calles</label>
+                                <input type="text" id="entre_calles" placeholder="Av. Siempre Viva, 742" required>
+
+                                <input type="submit" value="Aceptar" class="button button-generic button-primary">
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Retiro en sucursal -->
+                    <div class="carousel-item">
+                        <div class="entrega__item">
+                            <div class="entrega__content-img">
+                                <img src="img/retiro-sucursal.jpg" alt="">
+                            </div>
+
+                            <form action="">
+                                <div class="entrega__content-img-mobile-3">
+                                </div>
+                                <select name="" id="sucursal" required>
+                                    <option value="" disabled selected>Sucursal</option>
+                                    <option value="suc-cba">
+                                        Córdoba
+                                    </option>
+                                    <option value="suc-vallnde">
+                                        Villa Allende
+                                    </option>
+                                    <option value="suc-vcp">
+                                        Carlos Paz
+                                    </option>
+                                </select>
+                                <input type="date" required>
+                                <input type="time" required>
+                                <input type="submit" value="Aceptar" class="button button-generic button-primary" required>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#forma-pago" class="button button-light">Siguiente!</a>
+
+            <div class="fondo-animado-1">
+            </div>
+    
+            <div class="fondo-animado-2">
+            </div>
+        </section>
+
+        <!-- Forma de pago -->
+
+        <section id="forma-pago" class="forma-pago">
+
+            <div class="forma-pago__header">
+                <h3>Elige la forma de pago</h3>
+            </div>
+            <div class="forma-pago__content">
+                <div id="carouselPagoIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div class="carousel-indicators">
+                        <p data-target="#carouselPagoIndicators" data-slide-to="0" class="active">Efectivo</p>
+                        <p data-target="#carouselPagoIndicators" data-slide-to="1">Pago online</p>
+                    </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="forma-pago__item">
+                                <div class="forma-pago__img wow animate__animated animate__fadeInDown">
+                                    <img src="img/orden-confirmada.svg" alt="orden-confirmada">
+                                </div>
+
+                                <div class="forma-pago__order wow animate__animated animate__fadeInLeft">
+                                    <h4>Tu número de órden es: </h4>
+                                    <p>OR487534</p>
+                                    <p>Puedes pagar en nuestra sucursal presentando este código :)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="forma-pago__item">
+                                <div class="forma-pago__img">
+                                    <img src="img/pago-online.svg" alt="orden-confirmada">
+                                </div>
+
+                                <form action="">
+                                    <label for="numero">Número de la tarjeta</label>
+                                    <input type="text" id="numero" placeholder="1234-4567-8910-1112" maxlength="16" required>
+                
+                                    <label for="titular">Nombre del titular:</label>
+                                    <input type="text" name="" id="titular" placeholder="Tal como figura en la tarjeta" required>
+                
+                                    <div class="forma-pago__expiracion">
+                                        <label for="expira">Expira</label>
+                                        <input type="number" id="expira" maxlength="12" required>
+                                        <p>/</p>
+                                        <input type="number" id="expira" maxlength="4000" required>
+                                    </div>
+                                    
+                                    <div class="forma-pago__cvc">
+                                        <label for="cvc">CVC</label>
+                                        <input type="password" id="cvc" maxlength="3" required>
+                                    </div>
+                                    
+                                    <input type="submit" value="Pagar" class="button-primary button button-generic">
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sección de newsletter -->
+    
+    <section id="newsletter">
+        <form class="wow animate__animated animate__fadeIn">
+            <div class="newsletter__text">
+                <h3>Suscribite</h3>
+                <p>a nuestro newsletter semanal. Ingresa tu email y dale al enter :)</p>
+            </div>
+            <div class="newsletter__component">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required="required">
+                <input type="submit" id="submit" value="Enviar" class="button button-generic button-primary">
+            </div>
+        </form>
+    </section>
+    
+
+    <!-- Seccion pie de pagina -->
+
+    <footer class="footer">
+        <p class="footer__seguinos">Seguinos en nuestras redes sociales:</p>
+        <div class="contenedor">
+            <a href="#"><img src="img/face.png" alt="Logo acebook" class="facebook" loading="lazy"></a>
+            <a href="#"><img src="img/twit.png" alt="Logo twitter" class="twitter" loading="lazy"></a>
+            <a href="#"><img src="img/insta.png" alt="Logo instagram" class="instagram" loading="lazy"></a>
+        </div>
+
+        <dl class="footer__contacto">
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Teléfono: 0351-4660000</dd>
+                    <dd>Email: info@luggi.me</dd>
+                </dt>
+            </div>
+
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Av. Fuerza Aérea 2400, Córdoba</dd>
+                    <dd>9 de Julio 96, Villa Carlos Paz</dd>
+                    <dd>Rio de Janeiro 1725, Villa Allende</dd>
+                </dt>
+            </div>
+
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Lunes a viernes: 9am - 8pm</dd>
+                    <dd>Sábados: 10am - 5pm</dd>
+                    <dd>Domingos: 10am - 5pm</dd>
+                </dt>
+            </div>
+        </dl>
+
+        <div class="footer__desarrollador">
+            <p>&copy;2020 desarrollado por Luis Gudiño Dufour</p>
+            <ul>
+                <li><a href="https://github.com/Luggi-ops" target="_blank"><img src="img/Luis Gudiño/github.png"
+                            alt="github" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com/in/luis-gudi%C3%B1o-dufour-896892168/" target="_blank"><img
+                            src="img/Luis Gudiño/linkedin.png" alt="linkedin" loading="lazy"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!-- JS de WOW -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</body>
+
+</html>

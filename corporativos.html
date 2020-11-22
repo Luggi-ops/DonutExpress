@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Express Corporativo</title>
+
+    <meta name="description" content="Llevamos a tu empresa un excelente servicio de coffe break, totalmente personalizado y de calidad">
+    <meta name="keywords" content="donas de chocolate, donas glaceadas, donas light, donas con confites, café expresso, café con leche, capuchino, licuados, submarino de chocolate.">
+    <meta name="author" content="Luis Gudiño Dufour">
+
+    <!-- Favicon -->
+    <link  rel="icon"   href="img/favicon.ico" type="image/png" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- CSS de Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--CSS Mis estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Red+Hat+Display:wght@400;500&display=swap&family=Great+Vibes&display=swap"" rel="
+        stylesheet">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3">
+            <div class="navbar-logo mr-5">
+                <a href="index.html">
+                    <img src="img/logo-donut-express.png" alt="donut express logo">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="index.html#carta" class="nav-link">Nuestra carta</a></li>
+                    <li class="nav-item"><a href="index.html#pedido" class="nav-link">Hacé tu pedido</a></li>
+                    <li class="nav-item"><a href="corporativos.html" class="nav-link">Servicios Corporativos</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="index.html#newsletter" class="nav-link">Newsletter</a></li>
+                </ul>
+                <div class="navbar-carrito">
+                    <div>
+                        <a class="collapsed" data-toggle="collapse" href="#collapseExample"
+                            aria-expanded="false" aria-controls="collapseExample">
+                            <img src="img/carrito.png" alt="compra-dona"><img src="img/carrito-2.png" alt="compra-cafe">
+                        </a>
+                    </div>
+                    <div class="collapse carrito-items-group" id="collapseExample">
+                        <ul class="card card-body">
+                            <li>1 Donut Homer $110</li>
+                            <li>1 L Expresso $70</li>
+                            <li>Beneficio orden online 20%</li>
+                            <li> </li>
+                            <li>Total: $144</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="corporativo">
+        <div class="corporativo__top">
+            <div class="corporativo__img"></div>
+        </div>
+        
+        <h2 class="wow animate__animated animate__fadeInDown">Donut Express Corporativo</h2>
+
+        <div class="corporativo__text wow animate__animated animate__fadeInDown">
+            <h3>Catering y Coffe Breaks de calidad</h3>
+            <p>Con ese cariño y pasión que nos identifica, preparamos el coffe break de tus reuniones y eventos con la más alta calidad en el mercado.</p>
+            <p>Llena el formulario y nos pondremos en contacto a la brevedad: </p>
+        </div>
+
+        <form action="" class="corporativo__form wow animate__animated animate__fadeInLeft">
+            <label for="razon-social">Razón Social</label>
+            <input type="text" placeholder="Tu empresa" id="razon-social">
+
+            <label for="cuit">CUIT</label>
+            <input type="number" placeholder="30-000000-0" id="cuit">
+
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Carlos" id="nombre">
+
+            <label for="apellido">Apellido</label>
+            <input type="text" placeholder="Perez" id="apellido">
+
+            <label for="tel">Teléfono</label>
+            <input type="tel" placeholder="351-4000000" id="tel">
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Detalle los requerimientos"></textarea>
+            <button class="button button-primary button-generic" type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Pie de pagina -->
+
+    <footer class="footer">
+        <p class="footer__seguinos">Seguinos en nuestras redes sociales:</p>
+        <div class="contenedor">
+            <a href="#"><img src="img/face.png" alt="Logo acebook" class="facebook" loading="lazy"></a>
+            <a href="#"><img src="img/twit.png" alt="Logo twitter" class="twitter" loading="lazy"></a>
+            <a href="#"><img src="img/insta.png" alt="Logo instagram" class="instagram" loading="lazy"></a>
+        </div>
+
+        <dl class="footer__contacto">
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Teléfono: 0351-4660000</dd>
+                    <dd>Email: info@luggi.me</dd>
+                </dt>
+            </div>
+
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Av. Fuerza Aérea 2400, Córdoba</dd>
+                    <dd>9 de Julio 96, Villa Carlos Paz</dd>
+                    <dd>Rio de Janeiro 1725, Villa Allende</dd>
+                </dt>
+            </div>
+
+            <div class="footer__contacto__item">
+                <dt>
+                    <dd>Lunes a viernes: 9am - 8pm</dd>
+                    <dd>Sábados: 10am - 5pm</dd>
+                    <dd>Domingos: 10am - 5pm</dd>
+                </dt>
+            </div>
+        </dl>
+
+        <div class="footer__desarrollador">
+            <p>&copy;2020 desarrollado por Luis Gudiño Dufour</p>
+            <ul>
+                <li><a href="https://github.com/Luggi-ops" target="_blank"><img src="img/Luis Gudiño/github.png"
+                            alt="github" loading="lazy"></a></li>
+                <li><a href="https://www.linkedin.com/in/luis-gudi%C3%B1o-dufour-896892168/" target="_blank"><img
+                            src="img/Luis Gudiño/linkedin.png" alt="linkedin" loading="lazy"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+
+    <!-- JS de WOW -->
+    <script src="https://wowjs.uk/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

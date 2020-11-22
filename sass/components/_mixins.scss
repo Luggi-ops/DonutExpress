@@ -1,0 +1,402 @@
+
+
+// Reset
+
+@mixin reset(){
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin resetHTML($equivalenteRems:62.5%, $scroll:smooth){
+    font-size: $equivalenteRems; /**Reset para REMS 62.5% = 10px**/
+    scroll-behavior: $scroll;
+}
+
+
+//Background
+
+@mixin bg-img($url){
+    background-image: $url;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+//Flex-box
+
+@mixin df-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin df-column-center(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//Animaciones 
+
+//Animaciones Nuestra carta
+
+@mixin animation-nuestra-carta(){
+    .dona-animacion {
+        animation-name: dona;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        transform: rotate(0);
+    
+        -webkit-animation-name: dona;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+    
+        -moz-animation-name: dona;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+    
+        -o-animation-name: dona;
+        -o-animation-duration: dona;
+        -o-animation-iteration-count: infinite;
+    
+    }
+    
+    @keyframes dona {
+        0% {
+            transform: rotate(0);
+        }
+    
+        50% {
+            transform: rotate(45deg)
+        }
+    
+        100% {
+            transform: rotate(0);
+        }
+    }
+    
+    @-webkit-keyframes dona {
+        0% {
+            transform: rotate(0);
+        }
+    
+        50% {
+            transform: rotate(45deg)
+        }
+    
+        100% {
+            transform: rotate(0);
+        }
+    }
+    
+    @-moz-keyframes dona {
+        0% {
+            transform: rotate(0);
+        }
+    
+        50% {
+            transform: rotate(45deg)
+        }
+    
+        100% {
+            transform: rotate(0);
+        }
+    }
+    
+    @-o-keyframes dona {
+        0% {
+            transform: rotate(0);
+        }
+    
+        50% {
+            transform: rotate(45deg)
+        }
+    
+        100% {
+            transform: rotate(0);
+        }
+    }
+
+    .cafe-animacion{
+        position: relative;
+        top: 0;
+        animation-name: cafe;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        -webkit-animation-name: cafe;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+
+        -moz-animation-name: cafe;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+
+        -o-animation-name: cafe;
+        -o-animation-duration: 3s;
+        -o-animation-iteration-count: infinite;
+    }
+
+    @keyframes cafe {
+        0% {
+            top: 0%;
+        }
+
+        50%{
+            top: 10%;
+        }
+    
+        100% {
+            top: 0%;
+        }
+    }
+    
+    @-webkit-keyframes cafe {
+        0% {
+            top: 0%;
+        }
+
+        50%{
+            top: 10%;
+        }
+    
+        100% {
+            top: 0%;
+        }
+    }
+    
+    @-moz-keyframes cafe {
+        0% {
+            top: 0%;
+        }
+
+        50%{
+            top: 10%;
+        }
+    
+        100% {
+            top: 0%;
+        }
+    }
+    
+    @-o-keyframes cafe {
+        0% {
+            top: 0%;
+        }
+
+        50%{
+            top: 10%;
+        }
+    
+        100% {
+            top: 0%;
+        }
+    }
+}
+
+//Animaciones modo entrega
+
+
+//Animaciones Footer
+
+@mixin animation-footer-rrss(){
+
+    .facebook, 
+    .instagram{
+            animation-name: facebook-instagram;
+            -webkit-animation-name: facebook-instagram;
+            -moz-animation-name: facebook-instagram;
+            -o-animation-name: facebook-instagram;
+        }
+
+    @keyframes facebook-instagram{
+        0%{
+            top: 0;
+        }
+        25%{
+            top: -1rem;
+        }
+        50%{
+            top: 0;
+        }
+        75%{
+            top: -1rem;
+        }
+        100%{
+            top: 0;
+        }
+    }
+
+    @-webkit-keyframes facebook-instagram{
+        0%{
+            top: 0;
+        }
+        25%{
+            top: -1rem;
+        }
+        50%{
+            top: 0;
+        }
+        75%{
+            top: -1rem;
+        }
+        100%{
+            top: 0;
+        }
+    }
+
+    @-moz-keyframes facebook-instagram{
+        0%{
+            top: 0;
+        }
+        25%{
+            top: -1rem;
+        }
+        50%{
+            top: 0;
+        }
+        75%{
+            top: -1rem;
+        }
+        100%{
+            top: 0;
+        }
+    }
+
+    @-o-keyframes facebook-instagram{
+        0%{
+            top: 0;
+        }
+        25%{
+            top: -1rem;
+        }
+        50%{
+            top: 0;
+        }
+        75%{
+            top: -1rem;
+        }
+        100%{
+            top: 0;
+        }
+    }
+    
+    .twitter{
+        animation-name: twitter;
+        -webkit-animation-name: twitter;
+        -moz-animation-name: twitter;
+        -o-animation-name: twitter;
+    }
+
+    @-webkit-keyframes twitter{
+        0%{
+            top: -1rem;
+        }
+        25%{
+            top: 0;
+        }
+        50%{
+            top: -1rem;
+        }
+        75%{
+            top: 0;
+        }
+        100%{
+            top: -1rem;
+        }
+    }
+
+    @-moz-keyframes twitter{
+        0%{
+            top: -1rem;
+        }
+        25%{
+            top: 0;
+        }
+        50%{
+            top: -1rem;
+        }
+        75%{
+            top: 0;
+        }
+        100%{
+            top: -1rem;
+        }
+    }
+
+    @-o-keyframes twitter{
+        0%{
+            top: -1rem;
+        }
+        25%{
+            top: 0;
+        }
+        50%{
+            top: -1rem;
+        }
+        75%{
+            top: 0;
+        }
+        100%{
+            top: -1rem;
+        }
+    }
+
+    @keyframes twitter{
+        0%{
+            top: -1rem;
+        }
+        25%{
+            top: 0;
+        }
+        50%{
+            top: -1rem;
+        }
+        75%{
+            top: 0;
+        }
+        100%{
+            top: -1rem;
+        }
+    }
+
+}
+
+@mixin animation-footer-desarrollador(){
+
+    .footer__desarrollador{
+        ul{
+            img{
+                position: relative;
+                &:hover{
+                    animation-name: desarrollador-ico;
+                    animation-duration: 1s;
+
+                    -webkit-animation-name: desarrollador-ico;
+                    -webkit-animation-duration: 1s;
+
+                    -moz-animation-name: desarrollador-ico;
+                    -moz-animation-duration: 1s;
+
+                    -o-animation-name: desarrollador-ico;
+                    -o-animation-duration: 1s;
+                }
+            }
+        }
+    }
+
+    @keyframes desarrollador-ico{
+        0%{
+            transform: rotate(0deg);
+        }
+
+        50%{
+            transform: rotate(-45deg);
+        }
+
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+}

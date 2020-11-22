@@ -1,0 +1,288 @@
+//Media queries
+
+@media only screen and (max-width: 990px){
+
+
+    /**Sección pedido**/
+
+    .top-section{
+        .top-section__img{
+            img{
+                bottom: 5rem;
+                left: 3%;
+                width: 60rem;
+            }
+        }
+    }
+
+    /**Entrega**/
+
+    .entrega{
+        .carousel{
+            .carousel-indicators{
+                order: 0;
+                margin: 0;
+            }
+
+            .carousel-inner{
+                .carousel-item{
+                    .entrega__item{
+                        .entrega__content-img{
+                            display: none;
+                        }
+
+                        form{
+                            .entrega__content-img-mobile-1, .entrega__content-img-mobile-2, .entrega__content-img-mobile-3{
+                                display: block;
+                            }
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+    //Header
+
+    .navbar{
+        .navbar-carrito{
+            position: relative;
+            margin-left: 1rem;
+            .carrito-items-group{
+                position: relative;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 780px) {
+
+    /**Sección superior**/
+
+    .top-section{
+        height: 55rem;
+        display: flex;
+
+        .top-section__img{
+            img{
+                width: 40rem;
+            }
+            &:hover{
+                flex: 0 0 50%;
+            }
+        }
+
+        .top-section__text-container{
+            .top-section__text{
+                h1{
+                    font-size: 4rem;
+                }
+
+                p{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+
+    /**Pedido**/
+
+    
+    #pedido{
+        .pedido-container{
+            flex-direction: column;
+            height: max-content;
+        }
+    }
+
+    /**Forma de pago**/
+
+    .forma-pago{
+        .forma-pago__content{
+            .carousel{
+                .carousel-inner{
+                    height: 70rem;
+                }
+
+                .carousel-indicators{
+                    order: -1;
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
+
+    /**Nosotros**/
+
+    #nosotros{
+        .nosotros__content{
+            .nosotros__text{
+                width: 100%;
+            }
+        } 
+    } 
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    /**Sección superior**/
+
+    .top-section{
+        height: 70rem;
+        margin: 0;
+        flex-direction: column;
+
+        .top-section__text-container{
+            flex: 0 0 50%;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 4rem;
+            transition: none;
+
+            .top-section__text{
+                margin: 0;
+            }
+
+            .button{
+                left: 0;
+            }
+        }
+
+        .top-section__img{
+            flex: 0 0 50%;
+            transition: none;
+
+            img{
+                width: 40rem;
+                bottom: -22rem;
+                left: 14%;
+            }
+
+            &:hover{
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+    // Pedido
+
+    #pedido{
+        .pedido-container{
+            margin-bottom: 10rem;
+        }
+
+        .slider-heading{
+            margin-bottom: 4rem;
+        }
+    }
+
+
+    /**Modo de entrega**/
+
+    .entrega{
+        .carousel{
+            .carousel-indicators{
+                font-size: 1.5rem;
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p{
+                    margin: 1rem 0 0 0;
+                }
+            }
+        } 
+    } 
+
+    /**Forma de pago**/
+
+    .forma-pago{
+        .forma-pago__content{
+            .carousel .carousel-inner{
+                .carousel-item{
+                    .forma-pago__item{
+                        .forma-pago__img{
+                            margin-bottom: 3rem;
+                            img{
+                                width: 30rem;
+                            }
+                        }  
+                    } 
+                } 
+            } 
+        } 
+    } 
+
+    /**Footer**/
+
+    .footer{
+        font-size: 1rem;
+    }
+
+    /**Corporativos**/
+
+    .corporativo{
+        .corporativo__form{
+            width: 90%;
+
+            button{
+                padding: .5rem;
+            }
+        }
+
+        .corporativo__text{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+/**Mobile de baja resolución**/
+@media only screen and (max-width: 380px) {
+
+    /**Sección superior**/
+
+    .top-section{
+        .top-section__img{
+            img{
+                width: 33rem;
+                bottom: -21rem;
+                left: 8%;
+            }
+        }
+    }
+
+    /**Seccion pedidos**/
+
+    #pedido{
+        .row{
+            .carousel{
+                .carousel-control-next,
+                .carousel-control-prev{
+                    top: 10%;
+                }
+                .carousel-inner{
+                    .carousel-item{
+                        .slider-card{
+                            height: 50rem;
+
+                            .slider-card__img-container{
+                                height: 23rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

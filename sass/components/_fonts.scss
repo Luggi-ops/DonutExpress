@@ -1,0 +1,68 @@
+@import 'colors';
+
+// Fonts
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Red Hat Display', sans-serif;
+// font-family: 'Great Vibes', cursive;
+
+$font-heading: 'Red Hat Display', sans-serif;
+$font-general: 'Montserrat', sans-serif;
+$font-logo: 'Great Vibes', cursive;
+
+//Sizes
+
+$font-size-small: 1rem;
+$font-size-normal: 1.5rem;
+$font-size-large: 7rem;
+$font-size-h1: 3.5rem;
+$font-size-h2: 4rem;
+$font-size-h3: 3rem;
+$font-size-h4: 2rem;
+
+//Line height
+
+$line-height-default: 1.2;
+$line-height-special: 1.5;
+
+//Weight
+
+$normal: 400;
+$bold: 600;
+$ligther: 300;
+
+//Aplicated
+
+//Heading
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-heading;
+    font-weight: $ligther;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    font-weight: $normal;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: $font-size-h2;
+
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: 2rem;
+    font-weight: $bold;
+    color: $branding-color;
+    text-transform: capitalize;
+}
+
+

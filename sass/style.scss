@@ -1,0 +1,34 @@
+@import 'components/fonts';
+@import 'components/colors';
+@import 'components/mixins';
+@import 'components/utilities';
+@import 'components/buttons';
+@import 'components/fondo-donas';
+@import 'components/bot';
+@import 'layaout/header';
+@import 'layaout/top-section';
+@import 'layaout/nuestra-carta';
+@import 'layaout/pedido';
+@import 'layaout/nosotros';
+@import 'layaout/footer';
+@import 'layaout/corporativo';
+@import 'layaout/entrega';
+@import 'layaout/forma-pago';
+@import 'layaout/newsletter';
+@import 'layaout/media-queries';
+
+*{
+    @include reset();
+}
+
+html{
+    @include resetHTML();
+}
+
+body{
+    font-size: $font-size-normal;
+    font-family: $font-general;
+    line-height: $line-height-default;
+    color: $black;
+    background-color: $white;
+}
