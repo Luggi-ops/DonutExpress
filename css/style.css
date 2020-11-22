@@ -213,7 +213,7 @@ h4 {
           width: 100%; }
 
 .navbar {
-  background-color: #fafbfd; }
+  background-color: #fafbfd!important; }
   .navbar .navbar-collapse .navbar-nav li a {
     text-decoration: none;
     text-transform: capitalize;
