@@ -1154,7 +1154,11 @@ h4 {
     #pedido .row .carousel .carousel-inner .carousel-item .slider-card .slider-card__img-container {
       height: 23rem; }
   .entrega .carousel .carousel-inner .carousel-item .entrega__item form .entrega__content-img-mobile-1 {
-    left: 7.7rem !important; } }
+    left: 7.7rem !important; } 
+  /**Sección nosotros**/
+  #nosotros .nosotros__header{
+    margin: 23rem 0 5rem 0;
+  }}
 
 * {
   margin: 0;
