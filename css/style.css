@@ -560,8 +560,7 @@ h4 {
 
 #nosotros {
   height: 100vh;
-  min-height: 110rem;
-  padding: 60rem 0;
+  min-height: 150rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -572,7 +571,7 @@ h4 {
   z-index: 100;
   position: relative;}
   #nosotros .nosotros__header {
-    margin-top: 5rem; }
+    margin-bottom: 5rem; }
   #nosotros .nosotros__content {
     display: flex;
     justify-content: space-around;
@@ -1154,11 +1153,7 @@ h4 {
     #pedido .row .carousel .carousel-inner .carousel-item .slider-card .slider-card__img-container {
       height: 23rem; }
   .entrega .carousel .carousel-inner .carousel-item .entrega__item form .entrega__content-img-mobile-1 {
-    left: 7.7rem !important; } 
-  /**Sección nosotros**/
-  #nosotros .nosotros__header{
-    margin: 23rem 0 5rem 0;
-  }}
+    left: 7.7rem !important; }}
 
 * {
   margin: 0;
